@@ -9,7 +9,9 @@ export default {
 
   // Stop running tests after `n` failures
   // bail: 0,
-
+  transform: {
+    '^.+\\.tsx?$': 'ts-jest',
+  },
   // The directory where Jest should store its cached dependency information
   // cacheDirectory: "C:\\Users\\Ian\\AppData\\Local\\Temp\\jest",
 
@@ -19,6 +21,7 @@ export default {
   // Indicates whether the coverage information should be collected while executing the test
   // collectCoverage: false,
 
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   // An array of glob patterns indicating a set of files for which coverage information should be collected
   // collectCoverageFrom: undefined,
 
@@ -144,7 +147,7 @@ export default {
   // snapshotSerializers: [],
 
   // The test environment that will be used for testing
-  // testEnvironment: "jest-environment-node",
+  testEnvironment: 'jsdom',
 
   // Options that will be passed to the testEnvironment
   // testEnvironmentOptions: {},
