@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { RepoListZod } from './Types';
+import { RepoListZod } from '../Types';
 
 const getRepositories = (name: string) =>
   fetch(`https://api.github.com/users/${name}/repos`)
@@ -9,5 +9,5 @@ const getRepositories = (name: string) =>
 
 export const useUsersRepositories = (name: string) => {
   const enabled = !!name;
-  return useQuery({ queryKey: ['repos'], queryFn: () => getRepositories(name), enabled });
+  return useQuery({ queryKey: ['repos', name], queryFn: () => getRepositories(name), enabled });
 };

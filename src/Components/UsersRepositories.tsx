@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useUsersRepositories } from '../useUsersRepositories';
+import { useUsersRepositories } from '../api/useUsersRepositories';
 import { RepoDetails } from './RepoDetails';
 
 interface UsersRepositoriesProps {
