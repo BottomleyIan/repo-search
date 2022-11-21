@@ -11,3 +11,7 @@ A description of what the page is for could be useful at the top of the page.
 ## TODO - If I had more time
 - Handle errors better in what I display to the user, especially 404s
 - Configure react-query better, some defaults are not ideal
+- Display the user's avatar (not in scope of the challenge)
+- Add better tests, the tests also do not use best practice wherby they should be testing how the user interacts with the app. Not finding by name etc
+- Add more information to the repo cards, again not in scope, but I added the description and language anyway to add more interest
+
