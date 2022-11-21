@@ -1,0 +1,13 @@
+android/
+coverage/
+cypress/
+ios/
+node_modules/
+_editorconfig
+package.json
+app.json
+*.config.json
+index.json
+metro.config.json
+setup-tests.json
+.husky
