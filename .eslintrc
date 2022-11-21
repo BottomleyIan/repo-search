@@ -22,7 +22,7 @@
     "plugin:prettier/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "@avayler/eslint-config"
+    "plugin:react-hooks/recommended"
   ],
   "plugins": ["react", "prettier", "react-hooks", "@typescript-eslint", "jest"],
   "settings": {
