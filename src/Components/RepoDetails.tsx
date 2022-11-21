@@ -11,7 +11,6 @@ export const RepoDetails = ({ repo }: RepoDetailsProps) => {
         <a href={repo.html_url} className='text-lg text-blue-400'>
           {repo.name}
         </a>
-
         <div className='text-sm'>{repo.language}</div>
       </div>
       <div className='text-slate-300 text-sm'>{repo.description}</div>
